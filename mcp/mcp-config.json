@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "user-api-client": {
+      "command": "node",
+      "args": ["dist/main.js"],
+      "cwd": "."
+    }
+  }
+}

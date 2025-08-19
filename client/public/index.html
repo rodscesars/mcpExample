@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface MCP - Gerenciador de Usuários com IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Assistente IA - Gerenciador de Usuários</h1>
+            <p>Converse com a IA para gerenciar usuários através do MCP Server</p>
+            <div class="status" id="status">
+                <span class="status-indicator" id="statusIndicator">●</span>
+                <span id="statusText">Verificando conexão...</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message assistant">
+                        <div class="message-content">
+                            <strong>🤖 Assistente:</strong> Olá! Eu sou seu assistente para gerenciar usuários. 
+                            Posso ajudá-lo a:
+                            <ul>
+                                <li>Listar todos os usuários</li>
+                                <li>Buscar usuário por ID</li>
+                                <li>Criar novos usuários</li>
+                                <li>Atualizar dados de usuários</li>
+                                <li>Deletar usuários</li>
+                                <li>Buscar usuários por nome</li>
+                            </ul>
+                            O que gostaria de fazer?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="input-group">
+                        <input 
+                            type="text" 
+                            id="messageInput" 
+                            placeholder="Digite sua mensagem... (ex: 'liste todos os usuários', 'crie um usuário chamado João')"
+                            disabled
+                        >
+                        <button id="sendButton" disabled>
+                            <span id="sendButtonText">Enviar</span>
+                            <span id="sendButtonSpinner" class="spinner" style="display: none;">⏳</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggestions">
+                <h3>💡 Sugestões de comandos:</h3>
+                <div class="suggestion-buttons">
+                    <button class="suggestion-btn" data-message="Liste todos os usuários">
+                        📋 Listar usuários
+                    </button>
+                    <button class="suggestion-btn" data-message="Crie um usuário chamado Maria Silva com email maria@email.com e idade 28">
+                        ➕ Criar usuário
+                    </button>
+                    <button class="suggestion-btn" data-message="Busque o usuário com ID 1">
+                        🔍 Buscar por ID
+                    </button>
+                    <button class="suggestion-btn" data-message="Procure usuários com nome João">
+                        🔎 Buscar por nome
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by OpenAI + MCP Server + Express</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "mcp-client-interface",
+  "version": "1.0.0",
+  "description": "Interface web para interagir com MCP server via OpenAI",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js",
+    "build": "echo 'Build complete'"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "openai": "^4.67.3",
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": ["mcp", "openai", "interface", "client"],
+  "author": "",
+  "license": "ISC"
+}

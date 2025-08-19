@@ -1,0 +1,36 @@
+{
+  "name": "mcp-usuarios-ts",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP TypeScript para consumir a API de usuários",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/example.js",
+    "dev": "tsx src/example.ts",
+    "watch": "tsc --watch",
+    "mcp": "node dist/main.js",
+    "mcp:dev": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "axios": "^1.5.0",
+    "dotenv": "^17.2.1",
+    "openai": "^5.12.2",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "tsx": "^4.20.4",
+    "typescript": "^5.1.6"
+  },
+  "keywords": [
+    "client",
+    "api",
+    "usuarios",
+    "axios",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC"
+}
